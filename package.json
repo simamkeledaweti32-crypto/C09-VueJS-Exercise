@@ -1,0 +1,12 @@
+{
+  "name": "food-fest-tickets",
+  "version": "1.0.0",
+  "description": "Cape Town Food Fest Ticket Landing - Vue.js Exercise 02",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
