@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cape Town Food Fest Tickets</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+    h1 { text-align: center; color: #333; margin-bottom: 30px; }
+    .tickets-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+    .ticket-card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #ff6b35; }
+    .ticket-title { font-size: 1.5rem; color: #333; margin-bottom: 10px; }
+    .ticket-price { font-size: 2rem; color: #ff6b35; font-weight: bold; margin-bottom: 15px; }
+    .benefits { list-style: none; margin-bottom: 15px; }
+    .benefits li { padding: 5px 0; color: #666; }
+    .benefits li:before { content: "✓ "; color: #4caf50; font-weight: bold; }
+    .tickets-left { font-size: 0.9rem; color: #666; margin-bottom: 15px; }
+    .tickets-left.low { color: #f44336; font-weight: bold; }
+    .difficulty { display: inline-block; padding: 4px 10px; border-radius: 15px; font-size: 0.8rem; margin-bottom: 15px; }
+    .difficulty.standard { background: #e3f2fd; color: #1976d2; }
+    .difficulty.vip { background: #fff3e0; color: #f57c00; }
+    .difficulty.premium { background: #f3e5f5; color: #9c27b0; }
+    .reserve-btn { width: 100%; padding: 12px; background: #ff6b35; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+    .reserve-btn:hover { background: #e55a2b; }
+    .reserve-btn:disabled { background: #ccc; cursor: not-allowed; }
+    .sold-out { text-align: center; color: #f44336; font-weight: bold; padding: 12px; }
+    @media (max-width: 600px) { .tickets-grid { grid-template-columns: 1fr; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="src/main.js"></script>
+</body>
+</html>
